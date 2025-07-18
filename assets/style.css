@@ -60,6 +60,10 @@ body {
 	left: 0;
 	z-index: -1;
 }
+.picture.left > img {
+	width: 403.5px;
+	height: 403.5px;
+}
 
 .picture {
 	flex: 1;
