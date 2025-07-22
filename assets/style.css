@@ -61,8 +61,8 @@ body {
 	z-index: -1;
 }
 .picture.left > img {
-	width: 403.5px;
-	height: 403.5px;
+	width: 533px;
+	height: 533px;
 }
 
 .picture {
@@ -87,8 +87,8 @@ body {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
-	font-size: 0.9rem;
-	width: 60%;
+	font-size: 1em;
+	width: 100%;
 }
 #about-me p {
 	width: 80%;
@@ -106,7 +106,7 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active-tag, .nav-pills .show > .nav-link {
-	color: #fff;
+	color: #000;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
@@ -149,9 +149,10 @@ body {
 	padding-block: 3em;
 }
 .quote__text {
-	font-family: Spectral;
+	font-family: 'Spectral';
 	font-style: italic;
 	font-weight: 300;
+	font-size: 2.5rem;
 
 }
 .quote__author {
@@ -204,7 +205,17 @@ body {
 }
 
 #contact .container {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 2em;
+}
+.picture.right {
+	justify-self: center;
+	align-self: center;
+}
+.picture.right img {
+	max-width: 374px;
+	max-height: 374px;
 }
 .picture.right::before {
 	content: ' ';
@@ -223,7 +234,7 @@ body {
 form {
 	display: flex;
 	flex-direction: column;
-	width: 70%;
+	width: 100%;
 	align-items: flex-start;
 }
 
@@ -247,6 +258,11 @@ form textarea {
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
+}
+
+#footer p {
+	margin: 0;
+	padding: 4px;
 }
 
 @media all and (max-width: 1180px) {
